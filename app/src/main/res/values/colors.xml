@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7ae1e2</color>
+    <color name="colorPrimaryDark">#59bdb9</color>
+    <color name="colorAccent">#0bbcbe</color>
+    <color name="textColor">#121111</color>
+    <color name="textColorLight">#666666</color>
+    <color name="horizontal_line_fill_color">#c6c6c6</color>
+    <color name="progressBarColor">#ffffff</color>
+    <color name="textColorWhite">#ffffff</color>
+
+    <color name="profileBg">#ecebeb</color>
+</resources>

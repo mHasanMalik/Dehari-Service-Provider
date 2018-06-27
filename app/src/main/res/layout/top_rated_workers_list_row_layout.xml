@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/parent_relativeLayout_topRatedWorkers">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/workerProfile_imageView_topRatedWorkers"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/workerName_textView_topRatedWorker"
+            android:text="Uzair Imtiaz"
+            android:layout_below="@+id/workerProfile_imageView_topRatedWorkers"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:isIndicator="true"
+            android:max="5"
+            android:rating="2.5"
+            android:id="@+id/ratingBar_topRatedWorker_xml"
+            android:layout_centerHorizontal="true"
+            android:layout_alignEnd="@+id/workerProfile_imageView_topRatedWorkers"
+            android:layout_alignRight="@+id/workerProfile_imageView_topRatedWorkers"
+            android:layout_below="@+id/workerName_textView_topRatedWorker" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

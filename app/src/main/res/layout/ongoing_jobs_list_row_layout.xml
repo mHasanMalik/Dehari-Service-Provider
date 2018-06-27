@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/coverImage_ongoingJobList_xml"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"
+           android:adjustViewBounds="true"
+           android:scaleType="fitXY"/>
+
+       <TextView
+           android:id="@+id/dateText_ongoingJobList_xml"
+           android:layout_below="@id/coverImage_ongoingJobList_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="12/02/2018"
+           android:textColor="@color/textColor"
+           android:layout_margin="5dp"/>
+       <TextView
+           android:id="@+id/timeText_ongoingJobList_xml"
+           android:layout_below="@id/coverImage_ongoingJobList_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="12:00 PM"
+           android:textColor="@color/textColor"
+           android:layout_margin="5dp"/>
+       <TextView
+           android:id="@+id/ServiceName_tv_ongoingJobList_xml"
+           android:layout_below="@id/dateText_ongoingJobList_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="AC Fitting"
+           android:layout_margin="5dp"/>
+       <TextView
+           android:id="@+id/workerName_tv_ongoingJobList_xml"
+           android:layout_below="@id/ServiceName_tv_ongoingJobList_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Muhammad Hasan"
+           android:textColor="@color/textColor"
+           android:layout_marginLeft="5dp"
+           android:layout_marginBottom="5dp"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_below="@id/timeText_ongoingJobList_xml"
+           android:text="End Job"
+           android:textAllCaps="false"
+           android:background="@drawable/filled_btn2"
+           android:layout_margin="5dp"/>
+
+   </RelativeLayout>
+</android.support.v7.widget.CardView>

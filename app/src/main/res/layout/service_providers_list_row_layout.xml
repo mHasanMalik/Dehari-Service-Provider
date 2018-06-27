@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/workerImage_serviceProviders_list_xml"
+           android:layout_width="90dp"
+           android:layout_height="90dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:src="@mipmap/ic_launcher"
+           />
+       <TextView
+           android:id="@+id/workerType_textView_serviceProviders_list_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/workerImage_serviceProviders_list_xml"
+           android:layout_margin="5dp"
+           android:text="Electrician"
+           android:textColor="@color/textColorLight"
+
+           />
+       <TextView
+           android:id="@+id/workerName_textView_serviceProviders_list_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_toRightOf="@id/workerImage_serviceProviders_list_xml"
+           android:layout_below="@id/workerType_textView_serviceProviders_list_xml"
+           android:text="Shahzad Raza"
+           android:textColor="@color/textColor"/>
+
+       <TextView
+           android:id="@+id/hourlyRate_textView_serviceProviders_list_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_toRightOf="@id/workerImage_serviceProviders_list_xml"
+           android:layout_below="@id/workerName_textView_serviceProviders_list_xml"
+           android:text="Rs. 200 / hr"
+           android:textStyle="bold"
+           android:textColor="@color/textColor"/>
+
+       <RatingBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           style="?android:attr/ratingBarStyleSmall"
+           android:layout_marginLeft="15dp"
+           android:rating="5"
+           android:id="@+id/workerRating_ratingBar_serviceProviders_list_xml"
+           android:layout_below="@+id/workerImage_serviceProviders_list_xml"/>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="(05)"
+           android:layout_marginLeft="42dp"
+           android:gravity="center"
+           android:layout_below="@id/workerRating_ratingBar_serviceProviders_list_xml"
+
+           />
+
+       <TextView
+           android:id="@+id/location_textView_serviceProviders_list_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_toRightOf="@id/workerImage_serviceProviders_list_xml"
+           android:layout_below="@id/hourlyRate_textView_serviceProviders_list_xml"
+           android:text="Shoukat Khanam hospital, lhr"
+           android:textColor="@color/textColor"
+           android:drawableLeft="@drawable/location_icon_sec"/>
+
+       <TextView
+           android:id="@+id/distance_textView_serviceProviders_list_xml"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_toRightOf="@id/workerImage_serviceProviders_list_xml"
+           android:layout_below="@id/location_textView_serviceProviders_list_xml"
+           android:text="5 minutes away"
+           android:textColor="@color/textColorLight"
+           />
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="30dp"
+           android:text="Hire Now"
+           android:textColor="#ffffff"
+           android:textAllCaps="false"
+           android:background="@drawable/filled_btn2"
+           android:layout_alignParentRight="true"
+           android:layout_below="@id/location_textView_serviceProviders_list_xml"
+           android:layout_margin="5dp"
+           />
+   </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nfg.devlot.dehariprovider.Activity.HistoryJobDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/upperCard_historyJobDetails_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/coverImage_historyJobDetails_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/dateText_historyJobDetails_xml"
+                    android:layout_below="@id/coverImage_historyJobDetails_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12/02/2018"
+                    android:textColor="@color/textColor"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/timeText_historyJobDetails_xml"
+                    android:layout_below="@id/coverImage_historyJobDetails_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="12:00 PM"
+                    android:textColor="@color/textColor"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/serviceName_tv_historyJobDetails_xml"
+                    android:layout_below="@id/dateText_historyJobDetails_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC fitting"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/location_tv_historyJobDetails_xml"
+                    android:layout_below="@id/serviceName_tv_historyJobDetails_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shokat Khanm, lhr"
+                    android:drawableLeft="@drawable/location_icon_sec"
+                    android:layout_margin="5dp"/>
+
+                <TextView
+                    android:id="@+id/price_tv_historyJobDetails_xml"
+                    android:layout_below="@id/timeText_historyJobDetails_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs. 250"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/upperCard_historyJobDetails_xml"
+            android:id="@+id/lowerCard_historyJobDetails_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/workerImage_historyJobDetails_xml"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:src="@mipmap/ic_launcher"
+                    />
+                <TextView
+                    android:id="@+id/workerName_tv_historyJobDetails_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muhammad Hasan"
+                    android:textColor="@color/textColor"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/workerImage_historyJobDetails_xml"/>
+                <TextView
+                    android:id="@+id/workerCategory_tv_historyJobDetails_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electrician"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/workerName_tv_historyJobDetails_xml"
+                    android:layout_toRightOf="@+id/workerImage_historyJobDetails_xml"/>
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_margin="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:rating="5"
+                    android:id="@+id/workerRating_historyJobDetails_xml"
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:id="@+id/receipt_tv_historyJobDetails_xml"
+            android:layout_below="@id/lowerCard_historyJobDetails_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receipt"
+            android:textSize="20dp"
+            android:textColor="@color/textColor"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+        <android.support.v7.widget.CardView
+            android:layout_below="@id/receipt_tv_historyJobDetails_xml"
+            android:id="@+id/lastCard_historyJobDetails_xml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hourly rate: "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Working Time (hr): "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Basic: "
+                        android:layout_marginTop="55dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Previous:"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:text="Total:"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Discount:"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="In Account:"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Net Total:"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/textColor"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="27dp"
+                    android:layout_marginRight="27dp"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/hourlyRate_textView_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200" />
+
+                    <TextView
+                        android:id="@+id/time_textView_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="----------------------" />
+
+                    <TextView
+                        android:id="@+id/timeAndRateResult_tv_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="200 x 1 = 200" />
+
+                    <TextView
+                        android:id="@+id/basicRate_tv_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="50" />
+
+                    <TextView
+                        android:id="@+id/previous_tv_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="50"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="----------------------" />
+
+                    <TextView
+                        android:id="@+id/total_tv_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="300" />
+
+                    <TextView
+                        android:id="@+id/discount_tv_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="10% = 30" />
+                    <TextView
+                        android:id="@+id/accountCredit_tv_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="20"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="----------------------" />
+
+                    <TextView
+                        android:id="@+id/netTotal_tv_historyJobDetails_xml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Rs. 250"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lastCard_historyJobDetails_xml"
+            android:layout_marginTop="2dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_margin="5dp"
+                    android:rating="5"
+                    android:id="@+id/yourReviewRating_historyJobDetails_xml"
+                    />
+                <TextView
+                    android:id="@+id/yourReview_tv_historyJobsDetails_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Very good work by Hasan."
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

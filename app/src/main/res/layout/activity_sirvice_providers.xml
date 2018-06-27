@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nfg.devlot.dehariprovider.Activity.SirviceProvidersActivity">
+
+
+    <include layout="@layout/menu_toolbar"/>
+
+    <!-- filter and menu buttons -->
+
+    <LinearLayout
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="31"
+        >
+        <Button
+            android:id="@+id/menuBtn_btn_serviceProviders_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:text="Menu"/>
+        <Button
+            android:id="@+id/filterBtn_btn_serviceProviders_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:text="Filters"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            android:layout_weight="15"
+            android:layout_marginLeft="5dp"/>
+        <Button
+            android:id="@+id/clearFilterBtn_btn_serviceProviders_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:layout_marginLeft="5dp"
+            android:background="#ffffff"
+            android:text="Clear Filter"
+            android:textAllCaps="false"
+            android:textSize="17dp"/>
+
+
+
+    </LinearLayout>
+    -->
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>

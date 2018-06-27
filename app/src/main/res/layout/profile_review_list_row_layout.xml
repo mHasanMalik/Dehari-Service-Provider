@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!-- Reviewer Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reviewCommenterName_textView_workerProfile_xml"
+            android:text="Shahzad Raza"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <!-- Time of Rating -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/reviewCommenterName_textView_workerProfile_xml"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/reviewDate_textView_reviewProfile_xml"
+            android:text="15 march 2017"/>
+
+        <!-- Rating Bar -->
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="5"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/reviewCommenterName_textView_workerProfile_xml"
+            style="?android:attr/ratingBarStyleSmall"
+            android:id="@+id/userRating_ratingBar_workerProfile_xml"/>
+
+        <!-- Review -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/userRating_ratingBar_workerProfile_xml"
+            android:text="Great Job. I like this person. He is a professional"
+            android:id="@+id/reviewCommenter_textView_workerProfile_xml"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

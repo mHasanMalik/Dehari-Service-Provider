@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nfg.devlot.dehariprovider.Activity.MainActivity"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background_sec"
+            android:rotation="-180"/>-->
+        <RelativeLayout
+            android:id="@+id/upper_layout_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/urdu_textView_main_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textColor="#ffffff"
+                android:text="@string/urduText"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/dash_textView_main_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/urdu_textView_main_xml"
+                android:layout_toStartOf="@+id/urdu_textView_main_xml"
+                android:text="@string/verticalDash"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+            <TextView
+                android:id="@+id/english_textView_main_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/dash_textView_main_xml"
+                android:layout_toStartOf="@+id/dash_textView_main_xml"
+                android:text="@string/englishText"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_below="@id/upper_layout_main"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/toplayout_relativeLayout_main_xml"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp">
+
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+               android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="12dp"
+                android:clickable="true"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/continueWithPhoneNumber_button_main_xml"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/filled_btn2"
+                android:layout_above="@id/login_button"
+                android:text="@string/continueWithMobileNumber"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

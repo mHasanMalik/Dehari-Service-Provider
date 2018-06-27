@@ -1,0 +1,428 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nfg.devlot.dehariprovider.Fragment.SettingMenuFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!-- Top Layout for basic Information -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/toolbar"
+                android:id="@+id/topLayout_relativeLayout_xml">
+
+                <!-- Profile TextView -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/profile_textView_setting_xml"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="3dp"
+                    />
+
+                <!--  Name  Layout -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_textView_setting_xml"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/topNameLayout_relative_setting_xml">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/profile_imageView_setting_xml"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/profile_icon_sec"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_toRightOf="@id/profile_imageView_setting_xml">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name"
+                            android:textColor="@color/textColor"
+                            android:id="@+id/name_textView_setting_xml"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Muhammad Hasan"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/textColorLight"
+                            android:id="@+id/profileName_textView_setting_xml"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--  Mobile Number Layout -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/secondLayout_relativeLayout_setting_xml"
+                    android:layout_below="@id/topNameLayout_relative_setting_xml">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/mobile_imageView_setting_xml"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/mobile_icon_sec"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_toRightOf="@id/mobile_imageView_setting_xml">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mobileNumber"
+                            android:textColor="@color/textColor"
+                            android:id="@+id/mobileNumber_textView_setting_xml"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+923249480227"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/textColorLight"
+                            android:id="@+id/profileMobileNumber_textView_setting_xml"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Email -->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/thirdLayout_relativeLayout_setting_xml"
+                    android:layout_below="@id/secondLayout_relativeLayout_setting_xml">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/email_imageView_setting_xml"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/email_icon_sec"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_toRightOf="@id/email_imageView_setting_xml">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emailWoAddress"
+                            android:textColor="@color/textColor"
+                            android:id="@+id/email_textView_setting_xml"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hasan@gmail.com"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/textColorLight"
+                            android:id="@+id/profileEmail_textView_setting_xml"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!--  Change Password -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forthLayout_relativeLayout_setting_xml"
+                    android:clickable="true"
+                    android:layout_below="@id/thirdLayout_relativeLayout_setting_xml">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/changePassword_imageView_setting_xml"
+                        android:layout_marginRight="20dp"
+                        android:clickable="true"
+                        android:src="@drawable/lock_icon_sec"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:id="@+id/forthLayout_linearLayout_setting_xml"
+                        android:layout_toRightOf="@id/changePassword_imageView_setting_xml">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/changePassword"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:clickable="true"
+                            android:id="@+id/changePassword_textView_setting_xml"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- horizontal line -->
+            <View
+                style="@style/HorizontalLine"
+                android:layout_below="@id/topLayout_relativeLayout_xml"
+                android:id="@+id/firstLayout_horizontalLayout_setting_xml"/>
+
+            <!-- Second Layout for General Settings -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/firstLayout_horizontalLayout_setting_xml"
+                android:id="@+id/secondLayout_relativeLayout_xml">
+
+                <!--  General Layout -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/general_textView_setting_xml"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="3dp"
+                    />
+
+                <!-- language Layout -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/general_textView_setting_xml"
+                    android:layout_marginBottom="20dp"
+                    android:clickable="true"
+                    android:id="@+id/LanguageLayout_relative_setting_xml">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/language_imageView_setting_xml"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/world_icon_sec"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="-3dp"
+                        android:layout_toRightOf="@id/language_imageView_setting_xml">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/language"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:id="@+id/laguage_textView_setting_xml"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="English"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/textColorLight"
+                            android:id="@+id/profileLanguage_textView_setting_xml"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Rates Layout -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LanguageLayout_relative_setting_xml"
+                    android:clickable="true"
+                    android:id="@+id/rateLayout_relative_setting_xml">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/rates_imageView_setting_xml"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/star_icon_sec"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_toRightOf="@id/rates_imageView_setting_xml">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rateApp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:id="@+id/rate_textView_setting_xml"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <!-- horizontal line -->
+            <View
+                style="@style/HorizontalLine"
+                android:layout_below="@id/secondLayout_relativeLayout_xml"
+                android:id="@+id/secondLayout_horizontalLayout_setting_xml"/>
+
+            <!-- Third Layout for About Settings -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/secondLayout_horizontalLayout_setting_xml"
+                android:id="@+id/thirdLayout_relativeLayout_xml">
+
+                <!--  About Layout -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/about_textView_setting_xml"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="3dp"
+                    />
+
+
+                <!-- App Version -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:layout_below="@id/about_textView_setting_xml"
+                    android:id="@+id/appVersionLayout_relative_setting_xml">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/appVersiontext"
+                            android:textColor="@color/textColorLight"
+                            android:id="@+id/appVersion_textView_setting_xml"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/appVerion"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/textColorLight"
+                            android:id="@+id/profileAppVersion_textView_setting_xml"/>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- terms and conditions Layout -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/appVersionLayout_relative_setting_xml"
+                    android:layout_marginBottom="20dp"
+                    android:clickable="true"
+                    android:id="@+id/aboutLayout_relative_setting_xml">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="-3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/termsAndConditions"
+                            android:textColor="@color/textColor"
+                            android:id="@+id/termsAndCondition_textView_setting_xml"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <!-- log out -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/aboutLayout_relative_setting_xml"
+                    android:layout_marginBottom="20dp"
+                    android:clickable="true"
+                    android:id="@+id/logout_relative_setting_xml">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="-3dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/logout"
+                            android:textColor="@color/textColor"
+                            android:id="@+id/logout_textView_setting_xml"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
