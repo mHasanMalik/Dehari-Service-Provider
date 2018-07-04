@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.JobDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topLayout_relativeLayout_job_details_xml">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/cover_image"
+            android:id="@+id/dropDown_view_workerProfile_xml"/>
+
+        <View
+            android:layout_below="@id/dropDown_view_workerProfile_xml"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/profileBg"
+            />
+
+        <!-- PROFILE CIRCLE VIEW ICON -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_below="@+id/dropDown_view_workerProfile_xml"
+            android:src="@drawable/default_placeholder_image"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/workerProfile_circleImageView_jobdetails_xml"
+            android:layout_marginTop="-60dp"/>
+
+        
+        <!-- PROFILE NAME -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workerProfile_circleImageView_jobdetails_xml"
+            android:text="Muhammad Hasan"
+            android:id="@+id/workerName_textView_jobdetails_xml"
+            android:textColor="@color/textColorLight"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+        <!-- WORKER DESIGNATION -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/workerName_textView_jobdetails_xml"
+            android:text="Hi i want to hire you for Piping"
+            android:gravity="center"
+            android:id="@+id/workerProfession_textView_jobdetails_xml"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- WORKER LOCATION-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lahore, Pakistan"
+            android:layout_below="@+id/workerProfession_textView_jobdetails_xml"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:drawablePadding="5dp"
+            android:id="@+id/userLocation_textView_jobdetails_xml"
+            android:drawableLeft="@drawable/location_icon_sec"/>
+
+
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/topLayout_relativeLayout_job_details_xml">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Accept"
+            android:layout_margin="10dp"
+            android:id="@+id/accept_button_jobdetails_xml"
+            android:background="@drawable/accept_button_filled"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decline"
+            android:id="@+id/decline_button_jobdetails_xml"
+            android:background="@drawable/decline_button_filled"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+    
+</RelativeLayout>

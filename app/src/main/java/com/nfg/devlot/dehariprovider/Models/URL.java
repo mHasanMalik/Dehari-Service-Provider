@@ -19,4 +19,6 @@ public class URL {
     public static final String CHECK_IF_PROVIDER_HIRED  = MAIN_URL+"check_provider_hire_status.php";
     public static final String INSERT_ACCESS_TOKEN      = MAIN_URL+"insert_accesstoken.php";
     public static final String UPDATE_ACCESS_TOKEN      = MAIN_URL+"update_access_token.php";
+    public static final String GET_JOB_DETAILS          = MAIN_URL+"get_job_details.php";
+    public static final String SEND_JOB_NOTIFICATION    = MAIN_URL+"send_job_push_notification.php";
 }

@@ -65,4 +65,6 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="notifications_admin_channel_name">abc</string>
     <string name="notifications_admin_channel_description">dsa</string>
+    <string name="Accept">Accept</string>
+    <string name="decline">Decline</string>
 </resources>

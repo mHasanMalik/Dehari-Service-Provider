@@ -2,7 +2,9 @@ package com.nfg.devlot.dehariprovider.Helpers;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -12,9 +14,8 @@ import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import com.nfg.devlot.dehariprovider.Activity.JobDetailsActivity;
 import com.nfg.devlot.dehariprovider.R;
-
-import java.util.Random;
 
 public class FirebaseMessaging extends FirebaseMessagingService {
 
@@ -26,7 +27,22 @@ public class FirebaseMessaging extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
 
-       // Log.d("[*] Message Test", remoteMessage.getData().get("message"));
+        Log.d("[*] Message Test", remoteMessage.getData().get("message"));
+
+
+        String[] actualMessage  = remoteMessage.getData().get("message").trim().split("\\+");
+        String message          = actualMessage[0];
+        String jobId            = actualMessage[1];
+
+
+        Log.d("[*] Test Message", message);
+
+
+        Intent intent = new Intent(getApplicationContext(), JobDetailsActivity.class);
+        intent.putExtra("jobid", jobId);
+
+        PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(),0,intent, PendingIntent.FLAG_UPDATE_CURRENT);
+
 
         notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
@@ -34,22 +50,22 @@ public class FirebaseMessaging extends FirebaseMessagingService {
             setupChannels();
         }
 
-        int notificationId = new Random().nextInt(60000);
+        //int notificationId = new Random().nextInt(60000);
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, ADMIN_CHANNEL_ID)
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)  //a resource for your custom small icon
                 .setContentTitle(remoteMessage.getData().get("title")) //the "title" value you sent in your notification
-                .setContentText(remoteMessage.getData().get("message")) //ditto
-                .setAutoCancel(true)  //dismisses the notification on click
-                .setSound(defaultSoundUri);
+                .setContentText(message) //ditto
+                .setAutoCancel(false)  //dismisses the notification on click
+                .setSound(defaultSoundUri)
+                .addAction(R.drawable.ic_menu_manage,"View", pendingIntent);
 
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
         assert notificationManager != null;
-        notificationManager.notify(notificationId /* ID of notification */, notificationBuilder.build());
-
+        notificationManager.notify(0  , notificationBuilder.build());
 
     }
 

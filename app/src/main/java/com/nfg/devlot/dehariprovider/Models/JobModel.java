@@ -17,6 +17,16 @@ public class JobModel {
     private String status;
     private String additional_charges;
 
+    private String seekerName;
+    private String SeekingService;
+    private String seekerFcToken;
+
+
+    public JobModel()
+    {
+
+    }
+
     public JobModel(String id, String j_id, String s_id, String ss_id, String sp_id, String starting_time, String ending_time, String location, String status, String additional_charges) {
         this.id = id;
         this.j_id = j_id;
@@ -28,6 +38,31 @@ public class JobModel {
         this.location = location;
         this.status = status;
         this.additional_charges = additional_charges;
+    }
+
+
+    public String getSeekerFcToken() {
+        return seekerFcToken;
+    }
+
+    public void setSeekerFcToken(String seekerFcToken) {
+        this.seekerFcToken = seekerFcToken;
+    }
+
+    public String getSeekerName() {
+        return seekerName;
+    }
+
+    public void setSeekerName(String seekerName) {
+        this.seekerName = seekerName;
+    }
+
+    public String getSeekingService() {
+        return SeekingService;
+    }
+
+    public void setSeekingService(String seekingService) {
+        SeekingService = seekingService;
     }
 
     public String getId() {
