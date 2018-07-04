@@ -53,10 +53,10 @@ public class FirebaseMessaging extends FirebaseMessagingService {
         //int notificationId = new Random().nextInt(60000);
 
         Uri defaultSoundUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
-        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this)
+        NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, "M_C_ID")
                 .setSmallIcon(R.mipmap.ic_launcher)  //a resource for your custom small icon
-                .setContentTitle(remoteMessage.getData().get("title")) //the "title" value you sent in your notification
-                .setContentText(message) //ditto
+                .setContentTitle("Test") //the "title" value you sent in your notification
+                .setContentText("Again test") //ditto
                 .setAutoCancel(false)  //dismisses the notification on click
                 .setSound(defaultSoundUri)
                 .addAction(R.drawable.ic_menu_manage,"View", pendingIntent);
@@ -64,7 +64,6 @@ public class FirebaseMessaging extends FirebaseMessagingService {
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
-        assert notificationManager != null;
         notificationManager.notify(0  , notificationBuilder.build());
 
     }
